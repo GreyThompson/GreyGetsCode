@@ -1,82 +1,313 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="css/normalize.css">
-		<link type="text/css" rel="stylesheet" href="css/style.css">
-		<title>Grey Thompson | Coder</title>
-	</head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS Links -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animations.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!-- Title and Stuff -->
+		<title>Grey Thompson Portfolio | Grey Gets Code</title>
 	
+	</head>
 	<body>
-		<section>
-			<header>
-				<div id="h_contain">
-					<div id="h_block"></div>
-					<div id="h_content">
+		<!-- Navbar & Header Start -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			  <div class="container-fluid">
 
-						<!-- Header Content -->
-						<img src="img/profile.jpg" class="av_img">
-						<h1>Hello, my name is <em>Grey</em>.</h1>
-						<h2>And I'm a friggin' badass (coder).</h2>
-						<hr>
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><span class="navbar-grey">Grey Thompson</span>: Your Mom's Favourite Web Developer</a>
+			    </div>
 
-						<!-- Body Content -->
-						<div class="body_cont">
-							<h3>Work</h3>
-							<!--<p>I'm a young guy learning to code so I can take over the world. </p>-->
-							<ul>
-								<li>
-									I'm a Senior Analyst, Commercial Mortgages at First National Financial.
-								</li>
-								<li>
-									I perform freelance copywriting for startups. View my work at <a href="http://www.greythompson.com">GreyThompson.com</a>.
-								</li>
-							</ul>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav pull-right">
+			        <li><button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#aboutModal">About</button></li>
+			        <li><button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#contactModal">Get In Touch</button></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</header>
+		<!-- Navbar & Header End -->
 
-							<h3>Hobbies</h3>
-							<ul>
-								<li>
-									I enjoy talking to attractive strangers;
-								</li>
-								<li>
-									I'm known for my epic boy band covers;
-								</li>
-								<li>
-									I rip up the slopes as a ski racer; and
-								</li>
-								<li>
-									All year round, I like to pick up heavy things, move, and generally keep active.
-								</li>
-							</ul>
-
-							<h3>Education</h3>
-							<ul>
-								<li>
-									I graduated with a Bachelor of Commerce from Queen's University.
-								</li>
-								<li>
-									I'm currently a student at <a href="www.brainstation.it">BrainStation</a> learning Front-End Web Development.
-								</li>
-							<ul>
+		<!-- Hero Bar Start -->
+		<div class="vid-container">
+			<video class="hero-vid" width="100%" autoplay muted loop>
+				<source src="img/web-video.mp4" type="video/mp4"></source>
+				Your browser does not support my shit.
+			</video>
+			<div class="hero-overlay">
+				<div class="container">
+					<div class="row">
+						<div class="title-wrapper col-sm-7">
+							<h1 class="hero-title">He can't dance...</h1>						
+							<h1 class="hero-title pull-right">But at least Grey Gets Code.</h1>
 						</div>
-						<hr>
-
-						<div class="body_cont">
-							<h3>Contact</h3>
-							<ul>
-								<li>
-									Email me at <a href="mailto:grey.thompson@gmail.com">grey.thompson@gmail.com</a>.
-								</li>
-								<li>
-									Connect with me on Twitter at <a href="http://www.twitter.com/GreyThompson">@GreyThompson</a>
-								</li>
-							</ul>
-						</div>
-					</div> 
+						<!-- <div class="col-sm-4"></div> -->
+					</div>
 				</div>
-			</header>
+			</div>
+		</div>
+		<!-- Hero Bar End -->
 
+		<section>
+			<div class="container">
+				<div class="jumbotron">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="img/profile.jpg" class="avatar center-block">
+							</div>
+							<div class="col-sm-8">
+								<h1>Howdy, <br>my name is <span class="grey">Grey</span>. </h1>
+								<h2>And I make websites.</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		
-	</body>
 
+		<!-- Skills Section Start -->
+		<section class="skill-box">
+			<div class="container">
+				<div class="row">
+					<h1 class="skill-title">I've learned to write some pretty gnarly code.</h1>
+				</div>	
+				<div class="row animate-row">
+					<div class="col-sm-4" id="skill-slide-right">
+						<div class="row">
+							<h2 class="skill-copy">I can do this.</h2>
+						</div>
+						<div class="row">
+							<img class="skill-logo center-block" src="img/html5.png" />
+						</div>
+					</div>
+					
+					<div class="col-sm-4" id="skill-slide-up">
+						<div class="row">
+							<h2 class="skill-copy center-block">And this.</h2>
+						</div>
+						<div class="row">
+							<img class="skill-logo center-block" src="img/css3logo.png" />
+						</div>
+					</div>
+
+					<div class="col-sm-4" id="skill-slide-left">
+						<div class="row">
+							<h2 class="skill-copy">And this.</h2>
+						</div>
+						<div class="row">
+							<img class="skill-logo center-block" src="img/js.png" />
+						</div>						
+					</div>
+				</div>
+				<div class="row">
+					<h2 class="skill-title">And with these badass skillz, I can build things that will both <span class="grey">terrify and amaze you.</span></h2>
+				</div>
+			</div>
+		</section>
+		<!-- Skills Section End -->
+
+		<!-- Quote Section Start -->
+		<section id="suits-bg">
+			<div class="container">
+				<div class="row">
+					<div class="quote-box col-sm-6">
+						<h1 class="quote">"I'm wearing a suit so I look like a professional, but I'll be coding your website in my underwear."</h1>
+						<h2 class="quote-name pull-right">- Grey Thompson</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Quote Section End -->
+
+		<!-- Educational Background Start -->
+		<section class="ed-box">
+			<div class="container">
+				<div class="row">
+					<h1 class="ed-title">My Fuckin' Education</h1>
+					<h2>I wasn't born with this knowledge. I put in the goddamn time at some of <span class="grey">the best educational institutions in Canada</span>. #BraggingRights</h2><br><br>
+				</div>
+				<div class="row animate-row">
+					<div class="col-sm-6" id="ed-slide-right">
+						<img class="ed-logo center-block" src="img/qsob-logo.jpg" />
+						<h2 class="skill-copy"><span class="grey">Bachelor of Commerce</span><br>from Queen's University</h2>
+					</div>
+					<div class="col-sm-6" id="ed-slide-left">
+						<img class="ed-logo center-block" src="img/bs-logo.png" />
+						<h2 class="skill-copy"><span class="grey">Front-End Web Development</span> from BrainStation</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Educational Background End -->
+
+		<!-- Quote Section Start -->
+		<section id="face-bg">
+			<div class="container">
+				<div class="row">
+					<div class="quote-box col-sm-6">
+						<h1 class="quote">"Professional photography makes me look like an expert."</h1>
+						<h2 class="quote-name pull-right">- Grey Thompson</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Quote Section End -->
+
+		<!-- Website Evolution Start -->
+		<section class="evolution">
+			<div class="container">
+				<div class="row">
+					<h1 class="skill-copy">Humble Beginnings</h1>
+				</div>
+				<div class="row">
+					<div id="myCarousel" class="carousel slide" data-interval="false">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					  	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      <img class="center-block" src="img/ggc-1.png" alt="..." style="height=100%">
+					    </div>
+					    <div class="item">
+					    	<img class="center-block" src="img/ggc-2.png" alt="...">
+					    </div>
+					  </div>
+
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Website Evolution End -->
+
+		<!-- Footer Start -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-copy-wrapper">
+						<p>Copyright &copy; 2014 | GreyGetsCode.com</p>
+						<p>Built with &hearts; at BrainStation</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer End -->
+
+		<!-- About Modal Code Start -->
+		<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">About This Website</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>This website is built on the Bootstrap framework with HTML5, CSS3, and jQuery.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div> 
+		</div>
+		<!-- About Modal Code End -->
+
+		<!-- Contact Modal Code Start -->
+		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">How To Reach Me</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Because I'm so famous, I can't give you my phone number. Fortunately (for you) you're more than welcome to send me an email at <a href="mailto:mail@greythompson.com">mail@greythompson.com</a>.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div> 
+		</div>
+		<!-- Contact Modal Code End -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="js/vendor/bootstrap.min.js"></script>
+
+	    <!-- jQuery for Animations -->
+		<script>
+			$(document).ready(function() {
+				$(window).scroll(function() {
+					$('#skill-slide-right').each(function(){
+					var imagePos = $(this).offset().top;
+
+					var topOfWindow = $(window).scrollTop();
+						if (imagePos < topOfWindow+400) {
+							$(this).addClass("slideRight");
+						}
+					});
+					$('#skill-slide-left').each(function(){
+					var imagePos = $(this).offset().top;
+
+					var topOfWindow = $(window).scrollTop();
+						if (imagePos < topOfWindow+400) {
+							$(this).addClass("slideLeft");
+						}
+					});
+					$('#skill-slide-up').each(function(){
+					var imagePos = $(this).offset().top;
+
+					var topOfWindow = $(window).scrollTop();
+						if (imagePos < topOfWindow+400) {
+							$(this).addClass("slideUp");
+						}
+					});
+					$('#ed-slide-right').each(function(){
+					var imagePos = $(this).offset().top;
+
+					var topOfWindow = $(window).scrollTop();
+						if (imagePos < topOfWindow+400) {
+							$(this).addClass("slideRight");
+						}
+					});
+					$('#ed-slide-left').each(function(){
+					var imagePos = $(this).offset().top;
+
+					var topOfWindow = $(window).scrollTop();
+						if (imagePos < topOfWindow+400) {
+							$(this).addClass("slideLeft");
+						}
+					});
+				});
+			});
+		</script>
+	</body>
 </html>
